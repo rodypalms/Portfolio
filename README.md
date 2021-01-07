@@ -7,7 +7,7 @@ Developer's Portfolio
 
 ## Ícones
 
-:package: --------> nova funcionalidade
-:up:      --------> atualização
-:beattle: --------> correção de bug
-:checkered_flag: -> release
+- :package: -> nova funcionalidade
+- :up: -> atualização
+- :beattle: -> correção de bug
+- :checkered_flag: -> release
