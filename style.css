@@ -133,7 +133,8 @@ header {
     transition: all 1.5s;
 }
 
-/*.hamburguer span {
+/*
+    .hamburguer span {
     position: absolute;
     left: 3rem;
     background-color: #0f0c29;
@@ -144,17 +145,18 @@ header {
     align-items: center;
     color: #fff;
     font-family: var(--font-action);
-}*/
+}
 
 
 
-/*quero saber como faz para o hover ser no hamburguer(class) e o efeito acontecer
-no line (subclass do hamburguer)*/
+quero saber como faz para o hover ser no hamburguer(class) e o efeito acontecer
+no line (subclass do hamburguer)
 
-/*.hamburguer:hover {
+.hamburguer:hover {
     .line(
     background-color:royalblue;
-    )}*/
+    )}
+*/
 
 .line {
     width: 100%;
@@ -187,7 +189,7 @@ no line (subclass do hamburguer)*/
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    opacity: .9;
+    opacity: .7;
     position: fixed;
     top: 0;
     right: -20rem;
@@ -223,7 +225,7 @@ no line (subclass do hamburguer)*/
 .menu-link {
     font-family: var(--font-action);
     font-size: 2rem;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .menu-link:hover {
