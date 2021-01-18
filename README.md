@@ -9,5 +9,5 @@ Developer's Portfolio
 
 - :package: -> nova funcionalidade
 - :up: -> atualização
-- :beettle: -> correção de bug
+- :beetle: -> correção de bug
 - :checkered_flag: -> release
