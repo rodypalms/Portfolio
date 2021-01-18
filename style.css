@@ -286,6 +286,7 @@ no line (subclass do hamburguer)
 .conhecimento {
     margin-left: 1rem;
     color: rgba(0, 0, 0, .3);
+    transition: 1s;
 }
 
 .conhecimento:nth-child(1) {
@@ -369,4 +370,112 @@ no line (subclass do hamburguer)
     color: #0f0c29;
     text-shadow: 3px 2px, rgba(49, 48, 48, 0.3);
     transition: 1s;
+}
+
+/* sessão Projetos */
+
+.projetos {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.card {
+    width: 20rem;
+    height: 30rem;
+    position: relative;    
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    transition: 2s;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: .6;
+    transition: all 1s;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    justify-content: space-between;
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;
+}
+
+.card-info h2 {
+    font-family: var(--font-secundary);
+    font-weight: 500;
+    font-size: 2rem;
+    text-shadow: 2px .1rem 1px rgba(0, 0, 0, 1);
+    color: #eee;
+}
+
+.card-info h3 {
+    font-family: var(--font-secundary);
+    font-weight: 500;
+    font-size: 1rem;
+    color: #eee;
+    text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, 1);
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+    font-size: .9rem;
+    color: #eee;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .99);
+}
+
+.card-info button {
+    font-family: var(--font-action);
+    font-weight: 500;
+    color: rgba(100, 100, 100, 0.315);
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 1rem;
+    letter-spacing: 1.1px;
+    border-radius: 10px;
+    box-shadow: 0.3px 0.8px black;
+    padding: 1rem;
+    transition: 1s;
+}
+
+.card-info button:hover {
+    color: #fff;
+    transition: 1s;
+}
+
+.card-info button:active {
+    color: #0f0c29;
+    transition: 0s;
+}
+
+.card:hover .card-info {
+    visibility: visible;
+    opacity: 1;
+    bottom: 4rem;
+    transition: 1s;}
+    /*animation: move-card-info 1.5s forwards;
+}
+
+@keyframes move-card-info {
+    0% {
+        transform: translateY(0) rotateY(0deg);
+    }
+    100% {
+        transform: translateY(-2rem) rotateY(5deg);
+    }
 }
