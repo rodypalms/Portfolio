@@ -12,13 +12,13 @@
 </head>
 <body>
 	<div class="container">
-
+<!--Formatação de marcação de texto para um ícone de hamburguer clicável que interage via Js com o Menu de Navegação-->
 		<div class="hamburguer">
 			<div class="line" id="line1"></div>
 			<div class="line" id="line2"></div>
 			<div class="line" id="line3"></div>
 		</div>
-
+<!--Sessão de apresentação HomePage-->
 		<header>
 			<div class="img-wrapper">
 				<img src="imagens/bg.jpg" alt="Developer's computer">
@@ -30,7 +30,7 @@
 				<button>Lorem ipsum</button>
 			</div>
 		</header>
-		
+<!--Menu de Navegação feito com 3 lines de Javascript-->
 		<aside class="sidebar">
 			<nav>
 				<ul class="menu">
@@ -112,7 +112,7 @@
 				</div>
 			</div>
 		</section>
-		
+<!--Cards onde ficam meus projetos-->
 		<section class="sessao-projetos">
 			<div class="sessao-header">
 				<h1>Projetos</h1>
@@ -153,6 +153,34 @@
 				</div>
 			</div>
 		</section>
+<!--Formulários para contato --> 
+		<section class="sessao-contato">
+			<div class="contato-wrapper">
+				<div class="contato-left">
+					<img src="imagens/Contato.png" alt="Imagem de Contato">
+				</div>
+				<div class="contato-right">
+					<h1>Contato</h1>
+					<form action="">
+						<div class="input-group">
+							<input type="text" class="field" id="nome">
+							<label for="nome" class="field-label">Nome</label>
+						</div>
+						<div class="input-group">
+							<input type="text" class="field" id="e-mail">
+							<label for="e-mail" class="field-label">E-mail</label>
+						</div>
+						<div class="input-group">
+							<textarea class="field" id="mensagem"></textarea>
+							<label for="mensagem" class="field-label">Mensagem</label>
+						</div>
+						<button type="submit">Enviar</button>
+					</form>
+					
+				</div>
+			</div>
+		</section>
+
 	</div>
 		
 		<script src=script.js></script>
