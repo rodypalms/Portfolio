@@ -21,7 +21,7 @@
 <!--Sessão de apresentação HomePage-->
 		<header>
 			<div class="img-wrapper">
-				<img src="imagens/bg.jpg" alt="Developer's computer">
+				<img src="imagens/bg3.png" alt="Developer's computer">
 			</div>
 			<div class="banner">
 				<h1>Lorem ipsum dolor sit amet consectetur<br>
@@ -174,10 +174,40 @@
 							<textarea class="field" id="mensagem"></textarea>
 							<label for="mensagem" class="field-label">Mensagem</label>
 						</div>
-						<button type="submit">Enviar</button>
+						<button type="submit" class="btn">Enviar</button>
 					</form>
 					
 				</div>
+			</div>
+		</section>
+<!--Formulário para Orçamento-->
+		<section class="sessao-orcamento">
+			<video autoplay loop poster="imagens/bg-orcamento.png" class="video-bg">
+				<source src="imagens/videobg.webm" type="video/webm">
+				<source src="imagens/videobg.mp4" type="video/mp4">
+			</video>
+			<div class="orcamento-wrapper">
+				<h1>Faça um orçamento</h1>
+				<form>
+					<label for="qtde" id="label-qtde">Quantidade de Páginas</label>
+					<input type="number" name="qtde" id="qtde">
+					<label for="js" id="label-js">Preciso de um script JS</label>
+					<input type="checkbox" name="js" id="js">
+					<label>Layout</label>
+					<div class="group-layout">
+						<div>
+							<input type="radio" name="layout" id="layout-sim">
+							<label for="layout-sim">Preciso de um Layout</label>
+						</div>
+						<div>
+							<input type="radio" name="layout" id="layout-nao">
+							<label for="layout-nao">Já tenho um Layout</label>
+						</div>
+					</div>
+					<label for="prazo">Prazo</label>
+					<input type="range" name="prazo" id="prazo">
+					<button class="btn orcamento" type="submit">Enviar</button>
+				</form>
 			</div>
 		</section>
 
