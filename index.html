@@ -19,7 +19,7 @@
 			<div class="line" id="line3"></div>
 		</div>
 <!--Sessão de apresentação HomePage-->
-		<header>
+		<header id="home">
 			<div class="img-wrapper">
 				<img src="imagens/bg3.png" alt="Developer's computer">
 			</div>
@@ -34,11 +34,11 @@
 		<aside class="sidebar">
 			<nav>
 				<ul class="menu">
-					<li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+					<li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+					<li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
+					<li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+					<li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+					<li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
 				</ul>
 			</nav>
 			<div class="social-media">
@@ -47,8 +47,8 @@
 				<a href=""><i class="fab fa-linkedin"></i></a>
 			</div>
 		</aside>
-
-		<section class="sessao-conhecimentos">
+<!--Conhecimentos que possuo hoje-->
+		<section class="sessao-conhecimentos" id="conhecimentos">
 			<div class="sessao-header">
 				<h1>Conhecimentos</h1>
 			</div>
@@ -113,7 +113,7 @@
 			</div>
 		</section>
 <!--Cards onde ficam meus projetos-->
-		<section class="sessao-projetos">
+		<section class="sessao-projetos" id="projetos">
 			<div class="sessao-header">
 				<h1>Projetos</h1>
 			</div>
@@ -154,7 +154,7 @@
 			</div>
 		</section>
 <!--Formulários para contato --> 
-		<section class="sessao-contato">
+		<section class="sessao-contato" id="contato">
 			<div class="contato-wrapper">
 				<div class="contato-left">
 					<img src="imagens/Contato.png" alt="Imagem de Contato">
@@ -181,10 +181,10 @@
 			</div>
 		</section>
 <!--Formulário para Orçamento-->
-		<section class="sessao-orcamento">
-			<video autoplay loop poster="imagens/bg-orcamento.png" class="video-bg">
-				<source src="imagens/videobg.webm" type="video/webm">
+		<section class="sessao-orcamento" id="orcamento">
+			<video autoplay="true" loop class="video-bg">
 				<source src="imagens/videobg.mp4" type="video/mp4">
+				<source src="imagens/videobg.webm" type="video/webm">
 			</video>
 			<div class="orcamento-wrapper">
 				<h1>Faça um orçamento</h1>
@@ -211,8 +211,20 @@
 			</div>
 		</section>
 
-	</div>
-		
+	</div> <!--essa div é o fechamento do container-->
+	<footer>
+		<div>
+			<p class="palms">Copyright 2021 &copy <i>Palms</i> - Todos os direitos reservados</p>
+			<ul class='social-footer'>
+			<li class="li-social"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+			<li class="li-social"><a href=""><i class="fab fa-instagram"></i></a></li>
+			<li class="li-social"><a href=""><i class="fab fa-twitter"></i></a></li>
+			</ul>
+		</div>
+	</footer>
+		<a href="" id="top-link">
+			<i class="fas fa-arrow-up"></i>
+		</a>
 		<script src=script.js></script>
 </body>
 </html>
