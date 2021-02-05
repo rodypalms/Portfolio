@@ -126,7 +126,7 @@ header {
     background-color: transparent;
     width: 2.5rem;
     height: 2.7rem;
-    z-index: 100;
+    z-index: 160;
     position: fixed;
     right: 2rem;
     top: 2rem;
@@ -167,8 +167,11 @@ no line (subclass do hamburguer)
     height: .09rem;
     background-color:whitesmoke;
     box-shadow: 0.1rem 0.1rem 1px black;
+    z-index: 160;
     transition: transform 1s;
 }
+
+/*desaparecimento da barra do meio do hamburguer*/
 
 .show-menu #line2 {
     animation: xhamburguer 0.5s forwards;
@@ -179,13 +182,19 @@ no line (subclass do hamburguer)
     100%{opacity: 0;}
 }
 
+/*convertendo as barras de cima e de baixo em um X*/
+
 .show-menu #line1 {
     transform: rotate(45deg) translateY(15.5px);
+    z-index: 160;
 }
 
 .show-menu #line3 {
     transform: rotate(-45deg) translateY(-15.5px);
+    z-index: 160;
 }
+
+/*fim da animação do hamburguer*/
 
 .sidebar {
     width: 20rem;
@@ -206,6 +215,7 @@ no line (subclass do hamburguer)
 .show-menu .hamburguer {
     right: 16rem;
     transition: .8 0.25s;
+    z-index: 160;
 }
 
 .show-menu .sidebar{
@@ -503,21 +513,19 @@ no line (subclass do hamburguer)
     background: linear-gradient(rgba(15, 15, 15, .6), rgba(22, 22, 22, .6)),
                 url(imagens/Contato.png);
     background-size: cover;
-    border-radius: 40px;
 }
 
 .contato-left img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-bottom-left-radius: 40px;
 }
 
 .contato-right {
     text-align: center;
     width: 80%;
     background: #eee;
-    border-bottom-right-radius: 40px;
+    border-radius: 0 40px 40px 0 ;
     padding: 3rem;
 }
 
@@ -618,7 +626,7 @@ no line (subclass do hamburguer)
 .sessao-orcamento {
     height: 100vh;
     width: auto;
-    /*background: url(imagens/bg-orcamento.png);*/
+    background: url(imagens/bg-orcamento.png);
     object-fit: cover;
     display: flex;
     justify-content: center;
@@ -696,7 +704,7 @@ no line (subclass do hamburguer)
 
 footer {
     width: 100%;
-    height: 13vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -706,19 +714,27 @@ footer {
 .palms {
     font-family: var(--font-secundary);
     font-size: 1.1rem;
-    color: #a7a7a7;
-    padding-top: 1rem;
+    color: #c2c2c23d;
+    padding-top: .5rem;
+    transition: 3s;
+}
+
+.palms:hover {
+    color: #fff;
+    transition: 0.5s;
+    cursor: default;
+    text-shadow: 0 0 1px #fff;
 }
 
 .social-footer {
     display: flex;
     justify-content: space-evenly;
-    margin: 1.1rem 0 1.3rem 0;
+    margin: 1.9rem 0 1.3rem 0;
     font-size: 1.5rem;
-
 }
 
 .li-social i {
+    color:rgb(108, 108, 201);
     transition: 1s;
 }
 
@@ -757,3 +773,4 @@ footer {
     text-shadow: 0 0 3px rgb(92, 7, 202);
     transition: 0s;
 }
+

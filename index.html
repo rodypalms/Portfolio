@@ -30,7 +30,7 @@
 				<button>Lorem ipsum</button>
 			</div>
 		</header>
-<!--Menu de Navegação feito com 3 lines de Javascript-->
+<!--Menu de Navegação-->
 		<aside class="sidebar">
 			<nav>
 				<ul class="menu">
@@ -182,16 +182,19 @@
 		</section>
 <!--Formulário para Orçamento-->
 		<section class="sessao-orcamento" id="orcamento">
+			
+			<!--escolher um video como backgroud
+
 			<video autoplay="true" loop class="video-bg">
-				<source src="imagens/videobg.mp4" type="video/mp4">
-				<source src="imagens/videobg.webm" type="video/webm">
-			</video>
+				<source src="" type="video/mp4">
+				<source src="" type="video/webm">
+			</video>-->  
 			<div class="orcamento-wrapper">
 				<h1>Faça um orçamento</h1>
 				<form>
 					<label for="qtde" id="label-qtde">Quantidade de Páginas</label>
 					<input type="number" name="qtde" id="qtde">
-					<label for="js" id="label-js">Preciso de um script JS</label>
+					<label for="js" id="label-js">Preciso de um script JS para<br>dinamizar o produto<br>interagindo usuário/cliente</label>
 					<input type="checkbox" name="js" id="js">
 					<label>Layout</label>
 					<div class="group-layout">
@@ -205,8 +208,11 @@
 						</div>
 					</div>
 					<label for="prazo">Prazo</label>
-					<input type="range" name="prazo" id="prazo">
+					<input type="range" name="prazo" id="prazo" min="1" max="10">
 					<button class="btn orcamento" type="submit">Enviar</button>
+					<div>
+						<label id="preco-total">Total orçado</label>
+					</div>
 				</form>
 			</div>
 		</section>
@@ -216,15 +222,12 @@
 		<div>
 			<p class="palms">Copyright 2021 &copy <i>Palms</i> - Todos os direitos reservados</p>
 			<ul class='social-footer'>
-			<li class="li-social"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-			<li class="li-social"><a href=""><i class="fab fa-instagram"></i></a></li>
-			<li class="li-social"><a href=""><i class="fab fa-twitter"></i></a></li>
+			<li class="li-social"><a href="facebook.com/rodrigopalms"><i class="fab fa-facebook-f"></i></a></li>
+			<li class="li-social"><a href="instagram.com/rodypalms"><i class="fab fa-instagram"></i></a></li>
+			<li class="li-social"><a href="linkedin.com/in/rodrigoalvesp"><i class="fab fa-linkedin"></i></a></li>
 			</ul>
 		</div>
 	</footer>
-		<a href="" id="top-link">
-			<i class="fas fa-arrow-up"></i>
-		</a>
 		<script src=script.js></script>
 </body>
 </html>
